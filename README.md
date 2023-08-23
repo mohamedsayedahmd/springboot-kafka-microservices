@@ -34,3 +34,15 @@ bin/kafka-console-consumer.sh --topic order_topics  --from-beginning --bootstrap
 ```
 ___
 ### Group ID for stock-service : stock
+___
+### POST REQUEST
+http://localhost:8080/api/v1/orders
+### body :
+```
+{
+    "name": "laptop HP",
+    "qty": 1,
+    "price": 100000
+}
+```
+[T](https://www.javaguides.net/2022/07/event-driven-microservices-using-spring-boot-and-apache-kafka.html)
