@@ -4,9 +4,9 @@ ___
 ### I have opened [Spring Initializr](https://start.spring.io/)
 ### Create 4 spring projects :
 ### * base-domins 
-### * email-service
-### * order-service
-### * stock-service
+### * email-service (microservice) port <u>8082</u>
+### * order-service (microservice) port <u>8080</u>
+### * stock-service (microservice) port <u>8081</u>
 ___
 ### after opening the parent folder that has all the microservices , we need to load all of them.
 ###  f i r s t  : click on the load button.
@@ -34,6 +34,7 @@ bin/kafka-console-consumer.sh --topic order_topics  --from-beginning --bootstrap
 ```
 ___
 ### Group ID for stock-service : stock
+### Group ID for email-service : eamil
 ___
 ### POST REQUEST
 http://localhost:8080/api/v1/orders
