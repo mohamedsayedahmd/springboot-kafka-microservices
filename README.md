@@ -13,3 +13,24 @@ ___
  ###  s e c o n d  : go and press right-click on each pom.xml file and select
 Add as Maven Project
 ___
+in this project the consumer read the data as json file
+
+___
+## Start the ZooKeeper service
+
+```
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+```
+## Start the Kafka broker service
+
+```
+bin/kafka-server-start.sh config/server.properties
+```
+## Run the Consumer
+
+```
+bin/kafka-console-consumer.sh --topic order_topics  --from-beginning --bootstrap-server localhost:9092
+```
+___
+### Group ID for stock-service : stock
