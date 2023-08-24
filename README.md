@@ -3,12 +3,12 @@ ___
 ## Steps :
 ### I have opened [Spring Initializr](https://start.spring.io/)
 ### Create 4 spring projects :
-### * base-domins 
-### * email-service (microservice) port <u>8082</u>
-### * order-service (microservice) port <u>8080</u>
-### * stock-service (microservice) port <u>8081</u>
+### * base-domins (Lombok)
+### * email-service (microservice) port <u>8082</u> (Spring Web, Spring for Apache Kafka)
+### * order-service (microservice) port <u>8080</u> (Spring Web, Spring for Apache Kafka)
+### * stock-service (microservice) port <u>8081</u> (Spring Web, Spring for Apache Kafka)
 ___
-### after opening the parent folder that has all the microservices , we need to load all of them.
+### After opening the parent folder that has all the microservices , we need to load all of them.
 ###  f i r s t  : click on the load button.
  ###  s e c o n d  : go and press right-click on each pom.xml file and select
 Add as Maven Project
